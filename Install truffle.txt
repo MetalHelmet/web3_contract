@@ -1,0 +1,25 @@
+npm install web3
+npm install -g truffle
+
+mkdir MetaCoin
+cd MetaCoin
+truffle unbox metacoin
+
+ ## change Ganache port in \truffle-config.js
+
+ ## add to \migrations\2_deploy_contracts.js
+ ## const MyContract = artifacts.require("MyContract"); 
+ ## deployer.deploy(MyContract);
+truffle compile
+truffle migrate --reset
+
+truffle develop
+migrate  --reset
+
+
+
+
+---------------------------
+
+fantom
+npm install -g web3 ethereumjs-tx ethereumjs-util bip39 hdkey keythereum big-integer
